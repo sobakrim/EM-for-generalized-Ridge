@@ -7,8 +7,6 @@ This repository contains code and documentation for implementing the EM algorith
 - [Method](#method)
 - [Simulation Example](#simulation-example)
 - [Results](#results)
-- [Usage](#usage)
-- [License](#license)
 
 ## Introduction
 
@@ -32,16 +30,6 @@ A simulation example is provided to demonstrate the method. The example includes
 
 The results of the simulation example include visualizations of the true and estimated beta spatial fields for each covariance model.
 
-## Usage
-
-To use the code in this repository:
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/em_spatial_covariates.git
-    ```
-2. Open the `EM_Algorithm_Spatial_Covariates.Rmd` file in RStudio.
-3. Run the R Markdown file to generate the HTML report with the simulation example and results.
-
 ### Required Libraries
 
 The following R packages are required:
@@ -51,7 +39,3 @@ The following R packages are required:
 - corpcor
 - ggplot2
 - reshape2
-
-You can install the required packages using:
-```r
-install.packages(c("Matrix", "geoR", "MASS", "corpcor", "ggplot2", "reshape2"))
