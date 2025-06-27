@@ -6,7 +6,7 @@
 
 ---
 
-<h2>📘 Overview</h2>
+<h2> Overview</h2>
 
 This repository provides an R implementation of the <strong>Expectation-Maximization (EM) algorithm</strong> for <strong>Generalized Ridge Regression</strong> with spatial covariates.  
 The method is evaluated via a simulation study comparing regression coefficient estimates under different spatial priors:
@@ -29,21 +29,13 @@ The provided simulation illustrates:
 </ul>
 
 ---
+The full approach is described in:
+</p>
 
-<h2>🧰 Required R Packages</h2>
-
-Make sure to install the following R packages before running the code:
-
-```r
-install.packages(c(
-  "Matrix", "geoR", "MASS", "corpcor", "ggplot2", "reshape2"
-))
-
-<h2>🚀 Getting Started</h2>
-
-Clone this repository and run the main script:
-
-source("simulation_EM_spatial_ridge.R")
-
-The script outputs both plots and numerical results comparing estimation performance across models.
-<h2>📂 Repository Structure</h2> <ul> <li><code>simulation_EM_spatial_ridge.R</code> — Main simulation and estimation script</li> <li><code>README.md</code> — Project documentation</li> </ul> 
+<blockquote>
+  <p>
+    Obakrim, S. <em>et&nbsp;al.</em> “EM algorithm for generalized Ridge regression with spatial covariates,”
+    <em>Environmetrics</em>, 2024.
+    <a href="https://doi.org/10.1002/env.2871">doi:10.1017/eds.2022.35</a>
+  </p>
+</blockquote>
