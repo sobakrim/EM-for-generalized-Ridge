@@ -1,24 +1,49 @@
-# EM Algorithm for Generalized Ridge Regression with Spatial Covariates
+<h1 align="center">EM Algorithm for Generalized Ridge Regression with Spatial Covariates</h1>
 
-This repository contains code and documentation for implementing the EM algorithm for Generalized Ridge Regression with spatial covariates. The method is demonstrated using a simulation example, and the estimated beta values are compared across different covariance models (Matern, CAR, and Ridge).
+<p align="center">
+  <em>R implementation of a spatially-extended ridge regression using the EM algorithm</em>
+</p>
 
-## Introduction
+---
 
-This project presents the EM algorithm for Generalized Ridge Regression with spatial covariates. The method is demonstrated using a simulation example where the estimated beta values are compared across different covariance models (Matern, CAR, and Ridge).
+<h2>📘 Overview</h2>
 
-## Simulation Example
+This repository provides an R implementation of the <strong>Expectation-Maximization (EM) algorithm</strong> for <strong>Generalized Ridge Regression</strong> with spatial covariates.  
+The method is evaluated via a simulation study comparing regression coefficient estimates under different spatial priors:
 
-A simulation example is provided to demonstrate the method. The example includes:
-- Simulating spatial data using a Matern covariance function.
-- Fitting the EM algorithm for different covariance models.
-- Comparing the estimated beta values against the true beta values.
+<ul>
+  <li><strong>Matérn covariance</strong></li>
+  <li><strong>Conditional Autoregressive (CAR) model</strong></li>
+  <li><strong>Standard (non-spatial) Ridge</strong></li>
+</ul>
 
-### Required Libraries
+---
 
-The following R packages are required:
-- Matrix
-- geoR
-- MASS
-- corpcor
-- ggplot2
-- reshape2
+<h2>📊 Simulation Study</h2>
+
+The provided simulation illustrates:
+<ul>
+  <li>Generating spatially correlated covariates and responses using a Matérn process</li>
+  <li>Running the EM algorithm for each covariance structure</li>
+  <li>Comparing the estimated β coefficients to the true underlying values</li>
+</ul>
+
+---
+
+<h2>🧰 Required R Packages</h2>
+
+Make sure to install the following R packages before running the code:
+
+```r
+install.packages(c(
+  "Matrix", "geoR", "MASS", "corpcor", "ggplot2", "reshape2"
+))
+
+<h2>🚀 Getting Started</h2>
+
+Clone this repository and run the main script:
+
+source("simulation_EM_spatial_ridge.R")
+
+The script outputs both plots and numerical results comparing estimation performance across models.
+<h2>📂 Repository Structure</h2> <ul> <li><code>simulation_EM_spatial_ridge.R</code> — Main simulation and estimation script</li> <li><code>README.md</code> — Project documentation</li> </ul> 
